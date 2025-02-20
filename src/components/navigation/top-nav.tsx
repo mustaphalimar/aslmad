@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 const navItems = [
   {
@@ -44,7 +43,7 @@ const TopNav = () => {
                   "border-t border-t-orange-500": isActive,
                 })}
               >
-                <Link href={item.link} className="px-2">
+                <Link href={item.link} className="px-4">
                   {item.name}
                 </Link>
               </li>

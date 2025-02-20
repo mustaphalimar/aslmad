@@ -1,21 +1,20 @@
-import { createServer } from "http";
-import { parse } from "url";
-import next from "next";
+import express from "express";
+import { dev, nextApp, nextHandler, PORT } from "./next-utils";
 
-const port = parseInt(process.env.PORT || "3000", 10);
-const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
-const handle = app.getRequestHandler();
+const app = express();
 
-app.prepare().then(() => {
-  createServer((req, res) => {
-    const parsedUrl = parse(req.url!, true);
-    handle(req, res, parsedUrl);
-  }).listen(port);
+const start = async () => {
+  app.use((req, res) => nextHandler(req, res));
 
-  console.log(
-    `> Server listening at http://localhost:${port} as ${
-      dev ? "development" : process.env.NODE_ENV
-    }`
-  );
-});
+  nextApp.prepare().then(() => {
+    app.listen(PORT, async () => {
+      console.log(
+        `> Server listening at http://localhost:${PORT} as ${
+          dev ? "development" : PORT
+        }`
+      );
+    });
+  });
+};
+
+start();

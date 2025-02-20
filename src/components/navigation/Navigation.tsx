@@ -1,10 +1,12 @@
-import TopNav from "./to-nav";
+import ButtomNav from "./buttom-nav";
+import TopNav from "./top-nav";
 
 const Navigation = () => {
   return (
-    <div>
+    <>
       <TopNav />
-    </div>
+      <ButtomNav />
+    </>
   );
 };
 export default Navigation;
