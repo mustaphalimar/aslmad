@@ -11,7 +11,7 @@ const start = async () => {
       console.log(
         `> Server listening at http://localhost:${PORT} as ${
           dev ? "development" : PORT
-        }`
+        }`,
       );
     });
   });

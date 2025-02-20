@@ -10,7 +10,7 @@ const Container = ({ className, children }: Props) => {
     <div
       className={cn(
         "mx-auto w-full max-w-screen-xl px-2.5 md:px-16 2xl:max-w-screen-2xl",
-        className
+        className,
       )}
     >
       {children}

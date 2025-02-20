@@ -5,7 +5,14 @@
   "scripts": {
     "dev": "nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "cross-env NODE_ENV=production node dist/server.js"
+    "start": "cross-env NODE_ENV=production node dist/server.js",
+    "format": "prettier \"**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "pnpm format --check",
+    "format:write": "pnpm format --write",
+    "lint": "next lint",
+    "tsc": "tsc",
+    "validate": "pnpm format:write && pnpm tsc && pnpm lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.4",
@@ -34,8 +41,11 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "nodemon": "^3.1.9",
     "postcss": "^8",
+    "prettier": "^3.5.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
