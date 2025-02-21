@@ -42,6 +42,11 @@ const topCategories = [
     courses: 15,
     bgColor: "bg-purple-600",
   },
+  {
+    title: "Digital Marketing",
+    courses: 20,
+    bgColor: "bg-orange-600",
+  },
 ];
 
 const TopCategories = () => {
@@ -55,7 +60,7 @@ const TopCategories = () => {
               <div
                 key={category.title}
                 className={`
-                    ${category.bgColor} rounded  w-72 bg-opacity-20 p-4 flex items-center gap-3 hover:shadow-md transition-shadow duration-200 ease-in-out
+                    ${category.bgColor} cursor-pointer rounded  w-72 bg-opacity-15 p-4 flex items-center gap-3 hover:shadow-md transition-shadow duration-200 ease-in-out
                   `}
               >
                 <div className="bg-white p-2 w-14 h-14 flex flex-col items-center justify-center">
