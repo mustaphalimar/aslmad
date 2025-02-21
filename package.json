@@ -12,7 +12,7 @@
     "lint": "next lint",
     "tsc": "tsc",
     "validate": "pnpm format:write && pnpm tsc && pnpm lint",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@hookform/resolvers": "^4.1.0",
