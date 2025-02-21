@@ -3,11 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import NavigationMenuComponent from "./navigation-menu";
 import { Input } from "../ui/input";
-import { Search } from "lucide-react";
+import { Bell, Heart, Search, ShoppingCart } from "lucide-react";
+import { buttonVariants } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const ButtomNav = () => {
   return (
-    <div className="w-full p-6 border-b flex">
+    <div className="w-full p-6 border-b flex justify-between">
       <div className="flex items-center gap-3">
         <Link href="/" className="flex items-center gap-2 mr-4">
           <Image src="/logo.svg" alt="logo" width={30} height={30} />
@@ -20,6 +22,26 @@ const ButtomNav = () => {
             className="w-[300px] px-2 border-none shadow-none outline-none"
             placeholder="What do you want to learn?.."
           />
+        </div>
+      </div>
+      <div className="flex items-center gap-8">
+        <div className="flex items-center gap-5">
+          <Bell strokeWidth={1.5} size={20} />
+          <Heart strokeWidth={1.5} size={20} />
+          <ShoppingCart strokeWidth={1.5} size={20} />
+        </div>
+        <div className="flex items-center gap-2 ">
+          <Link
+            href="/sign-up"
+            className={buttonVariants({
+              variant: "secondary",
+            })}
+          >
+            Create account
+          </Link>
+          <Link href="/sign-in" className={buttonVariants()}>
+            Sign In
+          </Link>
         </div>
       </div>
     </div>

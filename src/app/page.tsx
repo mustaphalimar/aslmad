@@ -1,7 +1,9 @@
+import TopCategories from "@/components/home-sections/top-categories";
+
 export default function Home() {
   return (
     <div>
-      <h1>Hello Aslmad!</h1>
+      <TopCategories />
     </div>
   );
 }
