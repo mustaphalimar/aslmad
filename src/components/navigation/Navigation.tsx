@@ -1,4 +1,4 @@
-import ButtomNav from "./buttom-nav";
+import ButtomNav from "./bottom-nav";
 import TopNav from "./top-nav";
 
 const Navigation = () => {

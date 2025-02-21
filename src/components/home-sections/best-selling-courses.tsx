@@ -93,14 +93,14 @@ const BestSellingCourses = () => {
       <Container className="flex flex-col items-center">
         <h1 className="text-3xl font-semibold">Best Selling Courses</h1>
 
-        <div className="mt-6 grid gap-4 grid-cols-3 grid-rows-3">
+        <div className="mt-6 grid gap-4 grid-cols-4 grid-rows-3">
           {courses.map((course) => {
             return (
               <div
                 key={course.title}
-                className=" cursor-pointer overflow-hidden shadow duration-200 transition-shadow hover:shadow-md"
+                className=" rounded cursor-pointer max-w-[350px] max-h-fit overflow-hidden shadow duration-200 transition-shadow hover:shadow-md"
               >
-                <div className="w-[400px] h-[200px] rounded  border">
+                <div className="w-[400px] h-[200px] rounded ">
                   <Image
                     src={course.image}
                     width={400}
@@ -112,7 +112,7 @@ const BestSellingCourses = () => {
                 <div className="bg-white p-3 space-y-3 rounded">
                   <div className="flex justify-between">
                     <p
-                      className={`${course.bgColor} bg-opacity-15 w-fit p-1 font-semibold rounded`}
+                      className={`${course.bgColor} text-sm bg-opacity-15 w-fit p-1 font-semibold rounded`}
                     >
                       {course.category}
                     </p>

@@ -6,7 +6,7 @@ import { buttonVariants } from "../ui/button";
 import { Input } from "../ui/input";
 import NavigationMenuComponent from "./navigation-menu";
 
-const ButtomNav = () => {
+const BottomNav = () => {
   return (
     <div className="w-full p-6 border-b flex justify-between">
       <div className="flex items-center gap-3">
@@ -18,7 +18,7 @@ const ButtomNav = () => {
         <div className="flex items-center border shadow-sm rounded-sm px-2">
           <Search strokeWidth={1.2} size={20} />
           <Input
-            className="w-[300px] px-2 border-none shadow-none outline-none"
+            className="w-[400px] px-2 border-none shadow-none outline-none"
             placeholder="What do you want to learn?.."
           />
         </div>
@@ -46,4 +46,4 @@ const ButtomNav = () => {
     </div>
   );
 };
-export default ButtomNav;
+export default BottomNav;
