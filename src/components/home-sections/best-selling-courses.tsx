@@ -91,9 +91,9 @@ const BestSellingCourses = () => {
   return (
     <section className="bg-slate-50 py-16">
       <Container className="flex flex-col items-center">
-        <h1 className="text-3xl font-semibold">Best Selling Courses</h1>
+        <h1 className="text-4xl font-semibold">Best Selling Courses</h1>
 
-        <div className="mt-6 grid gap-4 grid-cols-4 grid-rows-3">
+        <div className="mt-6 grid gap-4 grid-cols-3 grid-rows-3">
           {courses.map((course) => {
             return (
               <div
@@ -112,7 +112,7 @@ const BestSellingCourses = () => {
                 <div className="bg-white p-3 space-y-3 rounded">
                   <div className="flex justify-between">
                     <p
-                      className={`${course.bgColor} text-sm bg-opacity-15 w-fit p-1 font-semibold rounded`}
+                      className={`${course.bgColor} text-xs h-fit bg-opacity-15 w-fit p-1  rounded uppercase`}
                     >
                       {course.category}
                     </p>
@@ -125,12 +125,12 @@ const BestSellingCourses = () => {
                   </div>
                   <Separator />
                   <div className="flex items-center gap-1">
-                    <Avatar className="w-6 h-6">
+                    <Avatar className="w-7 h-7">
                       <AvatarImage src="https://github.com/shadcn.png" />
                       <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
 
-                    <p className="">{course.instructor}</p>
+                    <p className="text-muted-foreground">{course.instructor}</p>
                   </div>
                   <div className="flex justify-between items-center">
                     <div className="flex gap-1 items-center">

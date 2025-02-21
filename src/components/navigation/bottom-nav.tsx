@@ -12,7 +12,7 @@ const BottomNav = () => {
       <div className="flex items-center gap-3">
         <Link href="/" className="flex items-center gap-2 mr-4">
           <Image src="/logo.svg" alt="logo" width={30} height={30} />
-          <p className="text-2xl font-bold">Aslmad</p>
+          <p className="text-3xl font-bold">Aslmad</p>
         </Link>
         <NavigationMenuComponent />
         <div className="flex items-center border shadow-sm rounded-sm px-2">

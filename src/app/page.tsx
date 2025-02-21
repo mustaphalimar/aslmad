@@ -1,4 +1,5 @@
 import BestSellingCourses from "@/components/home-sections/best-selling-courses";
+import FeatureCourses from "@/components/home-sections/feature-courses";
 import TopCategories from "@/components/home-sections/top-categories";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <TopCategories />
       <BestSellingCourses />
+      <FeatureCourses />
     </div>
   );
 }

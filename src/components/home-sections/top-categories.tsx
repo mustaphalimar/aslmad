@@ -53,8 +53,8 @@ const TopCategories = () => {
   return (
     <section className="my-14">
       <Container className="flex flex-col items-center">
-        <h1 className="text-3xl font-semibold">Browse Top Categories</h1>
-        <div className="mt-6 grid gap-4 grid-cols-4 grid-rows-3">
+        <h1 className="text-4xl font-semibold">Browse Top Categories</h1>
+        <div className="mt-6 grid gap-4 grid-cols-3 grid-rows-3">
           {topCategories.map((category) => {
             return (
               <div
