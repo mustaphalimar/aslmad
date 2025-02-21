@@ -24,7 +24,7 @@ const DottedSeparator = ({
         className,
         isHorizontal
           ? "w-full flex items-center"
-          : "h-full flex flex-col items-center"
+          : "h-full flex flex-col items-center",
       )}
     >
       <div

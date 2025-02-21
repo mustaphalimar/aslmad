@@ -50,7 +50,7 @@ const TopCategories = () => {
       <Container className="flex flex-col items-center">
         <h1 className="text-3xl font-semibold">Browse Top Categories</h1>
         <div className="mt-6 grid gap-4 grid-cols-4 grid-rows-3">
-          {topCategories.map((category, index) => {
+          {topCategories.map((category) => {
             return (
               <div
                 key={category.title}

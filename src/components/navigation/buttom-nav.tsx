@@ -1,11 +1,10 @@
 "use client";
+import { Bell, Heart, Search, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import NavigationMenuComponent from "./navigation-menu";
-import { Input } from "../ui/input";
-import { Bell, Heart, Search, ShoppingCart } from "lucide-react";
 import { buttonVariants } from "../ui/button";
-import { cn } from "@/lib/utils";
+import { Input } from "../ui/input";
+import NavigationMenuComponent from "./navigation-menu";
 
 const ButtomNav = () => {
   return (
